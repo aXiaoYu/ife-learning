@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二：零基础HTML及CSS编码(一)</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #DEDEDE;
+        }
+        ul>li {
+            list-style: none;
+        }
+        nav{
+            background-color: #333333;
+            height: 60px;
+        }
+        nav>img{
+            margin-left: 30px;
+        }
+        nav>ul{
+            float: right;
+            padding-left: 0;
+            margin: 0;
+        }
+        nav>ul>li{
+            float: left;
+            padding: 0 10px;
+            line-height: 60px;
+        }
+        nav>ul>li>a{
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 12px;
+        }
+        nav>ul>li>a:active,
+        nav>ul>li>a:hover,
+        nav>ul>li>a:focus{
+            color: #999999;
+        }
+        .main-box, aside{
+            margin: 20px;
+            background-color: #FFFFFF;
+            border-style: solid;
+            border-width: 1px 2px 2px 1px;
+            border-color: #CDCDCD #9F9F9F #9F9F9F #CDCDCD;
+            padding: 20px;
+        }
+        footer{
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            background-color: #000000;
+            color: #FFFFFF;
+            font-size: 12px;
+        }
+        h3,.font-gray{
+            color: #666666;
+        }
+        .fs-14{
+            font-size: 14px;
+        }
+        .ti-36{
+            text-indent: 32px;
+        }
+        .img-box{
+            border: 1px solid #CECECE;
+            width: 122px;
+            height: 126px;
+            padding: 10px;
+            margin: 12px 40px;
+            font-size: 12px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .img-box>img{
+            width: 100px;
+            height: 77px;
+            margin-top: 10px;
+        }
+        .table-css{
+            border: 1px #A1A1A1 solid;
+            width: 100%;
+            height: 150px;
+            text-align: left;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        .table-css>thead>tr{
+            background-color: #333333;
+            color: #FFFFFF;
+            height: 25px;
+        }
+        .table-css th,
+        .table-css td{
+            padding-left: 10px;
+        }
+        .table-css .row-total{
+            background-color: #CCCCCC;
+            font-weight: bold;
+        }
+        aside h3{
+            color: #333333;
+            border-left: 3px solid #CCCCCC;
+            font-size: 16px;
+            padding: 10px 0 10px 12px;
+        }
+        aside .content-box{
+            margin-left: 270px;
+            font-size: 12px;
+        }
+        aside .content-box p>span{
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        .tips{
+            color: #999999;
+            margin-left: 115px;
+        }
+        aside .content-box p input{
+            padding-left: 5px;
+            height: 20px;
+        }
+        aside .content-box p input[type='radio'],
+        aside .content-box p input[type='checkbox']{
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        aside textarea{
+            width: 79%;
+            height: 100px;
+            resize: vertical;
+            font-size: 14px;
+        }
+        .submit-btn{
+            width: 100%;
+            height: 38px;
+            line-height: 38px;
+            background-color: #3355D0;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="baidu_logo.png" alt="百度LOGO">
+        <ul>
+            <li><a href="#">导航链接一</a></li>
+            <li><a href="#">导航链接二</a></li>
+            <li><a href="#">导航链接三</a></li>
+            <li><a href="#">导航链接四</a></li>
+        </ul>
+    </nav>
+    <div class="main-box">
+        <h2>文章一级标题</h2>
+        <h3>文章二级标题</h3>
+        <span class="font-gray fs-14">文章作者</span>&nbsp;&nbsp;<span class="font-gray fs-14">文章发表时间</span>
+        <p class="ti-36">
+            这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了
+            <br>
+            这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了
+            <br>
+            这是一个很长的段落，这是一个很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长的段落，这是一个很长的段落，<strong>这里有个粗体字</strong>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落
+        </p>
+        <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="320px" height="200px">
+        <article class="ti-36">
+            这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了
+            <br>
+            这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，<b>这里有个粗体字</b>这是一个很长的段落，这是一个很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落。
+        </article>
+    </div>
+    <div class="main-box">
+        <h2>另一篇文章一级标题</h2>
+        <h3>文章二级标题</h3>
+        <section>
+            <span class="font-gray fs-14">文章作者</span>&nbsp;&nbsp;<span class="font-gray fs-14">文章发表时间</span>
+            <p class="ti-36">
+                这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了
+            </p>
+            这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了
+            <br>
+            这是一个很长的段落，这是一个很长的段落，
+            <a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长的段落，这是一个很长的段落，
+            <b>这里有个粗体字</b>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落。
+        </section>
+        <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="320px" height="200px">
+        <ul>
+            <li>列表项目一</li>
+            <li>列表项目二</li>
+            <li>列表项目三</li>
+        </ul>
+    </div>
+    <div class="main-box">
+        <h2>图片</h2>
+        <div class="img-box">
+            <span>好看的图片</span>
+            <br>
+            <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="400px" height="250px">
+        </div>
+        <p class="img-box">
+            好看的图片
+            <br>
+            <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="400px" height="250px">
+        </p>
+        <figure class="img-box">
+            <figcaption>好看的图片</figcaption>
+            <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="400px" height="250px">
+        </figure>
+        <main class="img-box">
+            好看的图片
+            <br>
+            <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="400px" height="250px">
+        </main>
+        <article class="img-box">
+            <p style="margin: 0;">好看的图片</p>
+            <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="400px" height="250px">
+        </article>
+        <section class="img-box">
+            <h4 style="margin: 0;font-weight: normal;">好看的图片</h4>
+            <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="400px" height="250px">
+        </section>
+        <div class="img-box">
+            <span>好看的图片</span>
+            <br>
+            <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="400px" height="250px">
+        </div>
+        <div class="img-box">
+            <h5 style="margin: 0;font-weight: normal;">好看的图片</h5>
+            <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="400px" height="250px">
+        </div>
+        <div class="img-box">
+            <h6 style="margin: 0;font-weight: normal;">好看的图片</h6>
+            <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="400px" height="250px">
+        </div>
+        <div class="img-box">
+            <div>好看的图片</div>
+            <img src="bing-wallpaper-01.jpg" alt="好看的图片" width="400px" height="250px">
+        </div>
+    </div>
+    <div class="main-box">
+        <h2>最后一篇文章一级标题</h2>
+        <h3>文章二级标题</h3>
+        <p class="font-gray fs-14">
+            文章作者&nbsp;&nbsp;文章发表时间
+        </p>
+        <ol>
+            <li>排名1</li>
+            <li>排名2</li>
+            <li>排名3</li>
+        </ol>
+        <p style="margin-bottom: 0;">下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
+        <table border="1" cellpadding="0" cellspacing="0" class="table-css">
+            <thead>
+            <tr>
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>表格内容单元格</td>
+                <td>表格内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表格内容单元格</td>
+                <td>表格内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表格内容单元格</td>
+                <td>表格内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表格内容单元格</td>
+                <td>表格内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr class="row-total">
+                <td style="border-right: none;">总计</td>
+                <td colspan="2" style="border-left: none;">1000</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <aside>
+        <h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+        <div class="content-box">
+            <p>
+                <span>请输入邮箱地址</span>
+                <input type="text" placeholder="这是一个文本输入框">
+            </p>
+            <span class="tips">邮箱地址请按要求格式输入</span>
+            <p>
+                <span>请输入密码</span>
+                <input type="password" placeholder="●●●●●●">
+            </p>
+            <p>
+                <span>请重复输入密码</span>
+                <input type="password" placeholder="●●●●●●">
+            </p>
+            <span class="tips">密码请输入6-16位英文数字</span>
+            <p>
+                <span>性别</span>
+                <label>
+                    <input name="gender" type="radio" checked>男
+                </label>
+                <label>
+                    <input name="gender" type="radio">女
+                </label>
+            </p>
+            <p>
+                <span>城市</span>
+                <select name="city">
+                    <option value="0">北京</option>
+                </select>
+            </p>
+            <p>
+                <span>爱好</span>
+                <label>
+                    <input type="checkbox">运动
+                </label>
+                <label>
+                    <input type="checkbox">艺术
+                </label>
+                <label>
+                    <input type="checkbox">科学
+                </label>
+            </p>
+            <p>
+                <span style="vertical-align: top;">个人描述</span>
+                <textarea cols="30" rows="2" placeholder="这是一个多行输入框"></textarea>
+            </p>
+        </div>
+        <button class="submit-btn">确认提交</button>
+    </aside>
+    <footer>版权所有&copy;</footer>
+</body>
+</html>
